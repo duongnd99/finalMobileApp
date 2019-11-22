@@ -12,15 +12,6 @@
         android:layout_width="100dp"
         android:layout_height="100dp" />
 
-<!--    <fragment-->
-<!--        android:id="@+id/inbox_row_inbox_info_fragment"-->
-<!--        android:name="com.example.final_mobile_project.inbox_info_fragment"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="128dp"-->
-<!--        android:layout_weight="0">-->
-<!--        -->
-<!--    </fragment>-->
-
     <LinearLayout
         android:id="@+id/inbox_row_info_layout"
         android:layout_width="match_parent"
@@ -31,7 +22,7 @@
             android:id="@+id/user_account_name"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1" />
+            android:layout_weight="1"/>
 
         <TextView
             android:id="@+id/inbox_topic"
@@ -44,9 +35,8 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1" />
+
     </LinearLayout>
-
-
 
 
 </LinearLayout>

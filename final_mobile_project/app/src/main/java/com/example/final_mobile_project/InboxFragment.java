@@ -1,5 +1,6 @@
 package com.example.final_mobile_project;
 
+import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
 import android.text.Layout;
@@ -43,7 +44,17 @@ public class InboxFragment extends Fragment {
 
 
             inboxFragment.addView(inboxRow);
+            inboxRow.setClickable(true);
+            inboxRow.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent i = new Intent(getActivity().getApplicationContext(), MessageDetail.class);
+                    startActivity(i);
+                }
+            });
         }
+
+
 
         return view;
     }
